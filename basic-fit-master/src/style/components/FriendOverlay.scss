@@ -1,0 +1,77 @@
+@use '../helpers/colors' as colors;
+.Overlay{
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(180deg, rgba(251, 120, 25, .9), rgba(45, 45, 45) 66%);
+}
+
+.OverlayHide{
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(180deg, rgba(251, 120, 25, .9), rgba(45, 45, 45) 66%);
+    display: none;
+}
+
+.HeaderContainer2{
+    font-family: 'Heading Pro Treble Heavy';
+    color: colors.$black;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-self: center;
+}
+
+.OverlayTxt{
+    font-family: 'Heading Pro Treble Heavy';
+    margin: auto;
+    text-transform: uppercase;
+    color: colors.$white;
+}
+
+.overlayWhite{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    height: 15vh;
+}
+
+.btnContainer{
+    font-family: 'Heading Pro Treble Heavy';
+    color: colors.$black;
+    height:80px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.overlayBtn{
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: colors.$orange;
+    border: none;
+    font-family: 'Heading Pro Double';
+    font-weight: bold;
+    font-size: 25px;
+    color: colors.$white;
+    &:hover{
+        color: colors.$black;
+    }
+}
+
+.overlayBtn2{
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: colors.$black;
+    border: none;
+    font-family: 'Heading Pro Double';
+    font-weight: bold;
+    font-size: 25px;
+    color: colors.$white;
+    &:hover{
+        color: colors.$orange;
+    }
+}

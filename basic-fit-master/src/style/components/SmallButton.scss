@@ -1,0 +1,12 @@
+@use '../helpers/colors.scss' as colors;
+
+.SmallBtn{
+   
+    text-align: center;
+    border: none;
+    background-color: colors.$light-gray;
+    color: colors.$black; 
+    font-family: 'Heading Pro Treble Heavy';
+    width: 100%;
+    height: 20vw;
+}

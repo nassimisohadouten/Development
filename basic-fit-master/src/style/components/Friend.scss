@@ -1,0 +1,95 @@
+@use '../helpers/colors' as colors;
+.FriendContainer {
+        width: 90%;
+        height: 78px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        align-self: center;
+        font-size: 14px;
+        font-family: 'Heading Pro Treble Heavy';
+        color: colors.$black;
+    }
+
+    .Friend{
+        margin-top: 24px;
+        width: 200px;
+        display: block;
+        justify-content: space-around;
+        margin-bottom: auto;
+        text-transform: uppercase;
+    }
+
+    .FriendName{
+        width: 100%;
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-transform: uppercase;
+        padding-left: 0;
+    }
+
+    .DisplayStatus{
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        vertical-align: top;
+    }
+
+    .Options{
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .StatusTxt{
+        font-size: 10px;
+        font-family: 'Heading Pro Double';
+        font-weight: 700;
+        display: flex;
+        margin: auto;
+        align-self: center;
+        text-transform: none;
+    }
+
+    .Status {
+        &.Online{
+            text-shadow: 0 0 0 colors.$online;
+        }
+        &.Busy{
+            text-shadow: 0 0 0 colors.$busy;
+        }
+        &.Pending{
+            text-shadow: 0 0 0 colors.$pending;
+        }
+        &.Offline{
+            text-shadow: 0 0 0 colors.$gray;
+        }
+        color: transparent;
+        display: flex;
+        align-self: center;
+    }
+
+    .AcceptButton{
+        background-color: colors.$orange;
+        border-radius: 10px;
+        border: none;
+        font-family: 'Heading Pro Double';
+        font-weight: bold;
+        font-size: 10px;
+        color: colors.$white;
+        width: 75px;
+        height: 22px;
+    }
+
+    #afwIcon{
+        width: 10px;
+        vertical-align: middle;
+    }
+
+    #optIcon{
+        width: 24px;
+        vertical-align: middle;
+    }

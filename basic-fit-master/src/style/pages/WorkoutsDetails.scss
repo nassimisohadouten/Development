@@ -1,0 +1,22 @@
+@use '../helpers/colors.scss' as colors;
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.Label{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.SmallButtonsPage{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 40%);
+    grid-auto-rows: 80px;
+    gap: 20px;
+
+}
+

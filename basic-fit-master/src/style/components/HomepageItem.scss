@@ -1,0 +1,34 @@
+@use '../helpers/colors.scss' as colors;
+
+.HomepageItem {
+    text-decoration: none;
+    color: colors.$white;
+    
+    > div {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        width: 50vw;
+        height: 150px;
+        margin-right: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding-bottom: 14px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: #000000;
+            opacity: 0.2;
+        }
+        .Heading3 {
+            position: relative;
+            z-index: 1;
+        }
+    }
+    &:last-child > div {
+        margin-right: 0;
+    }
+}

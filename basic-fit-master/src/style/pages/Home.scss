@@ -1,0 +1,35 @@
+@use '../helpers/colors.scss' as colors;
+
+.HomePage {
+    .dayLabels {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+        .Labels {
+            font-size: 12px;
+            line-height: 1;
+        }
+    }
+    .home-category-nav {
+        display: flex;
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+            color: colors.$black;
+        }
+    }
+    .home-category-list {
+        display: flex;
+        overflow: scroll;
+    }
+    .planning {
+        margin-top: 24px;
+    }
+    .challenges {
+        margin-top: 24px;
+    }
+    .pageTitleContainer{
+        width: 100%;  
+        text-align: center;
+    }
+}

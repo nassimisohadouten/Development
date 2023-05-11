@@ -1,0 +1,29 @@
+.ChallengeDetailPage {
+    .Challenge {
+        padding-bottom: 54px;
+    }
+    .ChallengeDetails {
+        margin-top: 28px;
+        margin-left: 24px;
+        margin-right: 24px;
+    
+        ul {
+            margin-top: 24px;
+            list-style: none;
+            li {
+                margin-bottom: 24px;
+                display: flex;
+                &.open {
+                    opacity: 0.4;
+                }
+                span:first-child {
+                    width: 50px;
+                    flex-shrink: 0;
+                    img {
+                        width: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@use '../helpers/colors' as colors;
+.HeaderContainer{
+    font-family: 'Heading Pro Treble Heavy';
+    color: colors.$black;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-self: center;
+    border-bottom: 2px solid colors.$orange;
+}
+
+.HeaderTxt{
+    font-family: 'Heading Pro Treble Heavy';
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.IconContainer{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+}
+
+.white{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+}
+
+.white2{
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    height: 40px;
+}
+
+.SearchContainer{
+    width: 95%;
+    margin: auto;
+    // height: 126px;
+}
+
+.FriendsContainer1{
+    height: 234px;
+    border-bottom: 2px solid colors.$orange;
+}
+
+.FriendsContainer2{
+    height: 800px;
+}
+
+.TopWhite{
+    height: 66.6px;
+}

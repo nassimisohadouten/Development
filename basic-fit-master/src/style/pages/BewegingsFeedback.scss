@@ -1,0 +1,149 @@
+body {
+    // overflow: hidden;
+}
+.MotionFeedback {
+    .container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
+    #canvas {
+        display: none;
+    }
+    
+    #video {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        min-width: 100vw;
+        min-height: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    #hip-line {
+        position: absolute;
+        z-index: 1;
+        width: 100vw;
+        height: 50px;
+        opacity: 0;
+        background: rgba(255, 255, 255, 0.5);
+        left: 50%;
+        transform: translate(-50%, 0);
+    
+        transition: top 0.1s, background 0.5s ease;
+    }
+    #hip-line.active {
+        opacity: 0.75;
+    }
+    
+    #target-line {
+        position: absolute;
+        width: 100vw;
+        height: 200px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
+    #target-line:not(.active) {
+        display: none;
+    }
+    
+    #countdown {
+        z-index: 1;
+        color: white;
+        position: relative;
+        font-family: 'roboto';
+        text-align: center;
+        font-size: 80vw;
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    #bodyNotFullyVisible {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        font-family: 'roboto';
+        top: 50%;
+        transform: translateY(-50%);
+        color: #ffffff;
+        font-size: 42px;
+    }
+    
+    .intro {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+    }
+    .step-1 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 24px;
+        text-align: center;
+        background: #ffffff;
+    }
+    .step-1.completed {
+        display: none;
+    }
+    .step-1 h1 {
+        margin-top: -50%;
+        margin-bottom: 24px;
+    }
+    .step-1 p {
+        font-size: 32px;
+        margin-bottom: 48px;
+    }
+    
+    .step-2 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 24px;
+        text-align: center;
+        background: #ffffff;
+    }
+    .step-2.completed {
+        display: none;
+    }
+    .step-2 h1 {
+        margin-top: -50%;
+        margin-bottom: 24px;
+    }
+    .step-2 p {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .step-2 video {
+        margin-bottom: 48px;
+    }
+    
+    .btn {
+        background: none;
+        border: none;
+        padding: 12px 24px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 42px;
+    }
+    .btn-orange {
+        background: #FB7819;
+        color: #ffffff;
+    }
+    
+    .d-none {
+        display: none !important;
+    }
+}
+
+#app {
+    overflow: hidden;
+}
+
+#webpack-dev-server-client-overlay {
+    display: none;
+}

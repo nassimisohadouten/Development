@@ -1,0 +1,39 @@
+@use '../helpers/colors.scss' as colors;
+
+.GrayButton {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding-top: 57px;
+    padding-bottom: 31px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 4px;
+    color: orange;
+    background: orange;
+    background-color: orange;
+    
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        color: orange;
+        opacity: 0.4;
+        background-color: orange;
+    }
+    a {
+        color: orange;
+        position: relative;
+        z-index: 1;
+        text-decoration: none;
+        color: colors.$white;
+    }
+    h2 {
+        margin-bottom: 6px;
+        font-size: 24px;
+    }
+    p {
+        font-size: 12px;
+    }
+}

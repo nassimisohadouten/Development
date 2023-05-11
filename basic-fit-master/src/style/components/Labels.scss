@@ -1,0 +1,31 @@
+@use '../helpers/colors.scss' as colors;
+
+// 
+.Labels {
+    width: fit-content;
+    padding: 12px 20px;
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Heading Pro Double';
+
+    // kleur achtergrond en letters van de Basic, Intermediate en Advanced labels
+    &.orange {
+        background-color: colors.$orange;
+        color: colors.$light-gray;
+    }
+
+    &.aqua {
+        background-color: colors.$aqua;
+        color: colors.$light-gray; 
+    }
+
+    &.purple{
+        background-color: colors.$purple;
+        color: colors.$light-gray; 
+    }
+    &.black {
+        background-color: colors.$black;
+        color: colors.$white;
+    }
+}

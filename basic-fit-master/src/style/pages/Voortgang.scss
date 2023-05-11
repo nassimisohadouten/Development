@@ -1,0 +1,95 @@
+@use '../helpers/colors' as colors;
+
+.ProgressPage {
+    .profile-header {
+        position: relative;
+        display: flex;
+        padding: 0 24px;
+        border-bottom: 1px solid colors.$orange;
+
+        button .icon {
+            display: flex;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .profile-name {
+            width: 100%;
+            text-align: center;
+
+            h1 {
+                margin-bottom: 0;
+                padding-left: 0;
+            }
+        }
+    }
+    h2 {
+        text-align: center;
+        padding-top: 24px;
+    }
+
+    .categorySelector {
+        margin-top: 12px;
+    }
+
+    .statistic-container {
+        position: relative;
+        display: flex;
+        padding-top: 12px;
+        strong {
+            display: block;
+            line-height: 1;
+            font-size: 24px;
+            margin: 8px 0;
+        }
+        
+        &:not(:last-child) {
+            border-bottom: 1px solid colors.$gray;
+            padding-bottom: 12px;
+        }
+        &:last-child {
+            border-top: 1px solid colors.$gray;
+        }
+
+        .statistic-title {
+            color: colors.$gray;
+        }
+        p {
+            font-size: 12px;
+        }
+
+        .left {
+            width: 60%;
+        }
+        .right {
+            width: 40%;
+            position: relative;
+
+            img {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+    .level-container {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        text-align: center;
+
+        h2 {
+            padding-top: 0;
+        }
+
+        .ProgressCircle {
+            margin-top: 12px;
+            .circle {
+                width: 100px;
+                height: 100px;
+            }
+            .percentage {
+                font-size: 20px;
+            }
+        }
+    }
+}

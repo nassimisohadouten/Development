@@ -1,0 +1,37 @@
+@use '../helpers/colors.scss' as colors;
+
+.categorySelector {
+    padding-top: 14px;
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style: none;
+        padding: 0;
+        border-bottom: 2px solid #DBD5D5;
+        li {
+            position: relative;
+            text-align: center;
+            padding-bottom: 28px;
+            &.active::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                transform: translateY(75%);
+                background: colors.$orange;
+            }
+            a {
+                text-decoration: none;
+                color: colors.$black;
+                font-family: 'Heading Pro Double';
+                font-size: 16px;
+                opacity: 0.3;
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

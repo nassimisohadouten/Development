@@ -1,0 +1,65 @@
+// This css file includes styling that is applied on all pages
+@font-face {
+    font-family: 'Heading Pro Double';
+    src: url('../../public/assets/fonts/HeadingProDouble-Regular.woff2') format('woff2'),
+        url('../../public/assets/fonts/HeadingProDouble-Regular.woff') format('woff'),
+        url('../../public/assets/fonts/HeadingProDouble-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Heading Pro Treble';
+    src: url('../../public/assets/fonts/HeadingProTreble-Heavy.woff2') format('woff2'),
+        url('../../public/assets/fonts/HeadingProTreble-Heavy.woff') format('woff'),
+        url('../../public/assets/fonts/HeadingProTreble-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Heading Pro Double';
+    src: url('../../public/assets/fonts/HeadingProDouble-Bold.woff2') format('woff2'),
+        url('../../public/assets/fonts/HeadingProDouble-Bold.woff') format('woff'),
+        url('../../public/assets/fonts/HeadingProDouble-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Heading Pro Double';
+}
+
+#app {
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+
+    // Fix to always allow scrolling. This prevents content getting stuck under the bottom navigation
+    padding-bottom: 120px;
+}   
+
+h1 {
+    // padding-left: 24px;
+    // margin-bottom: 46px;
+}
+
+.container {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.button{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+}

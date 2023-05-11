@@ -1,0 +1,63 @@
+@use '../helpers/colors' as colors;
+
+.pageTitleContainer{
+    width: 100%;  
+    text-align: center;
+    height: 70px;
+}
+
+.weekTxt{
+    display: flex;
+    margin-left: 5%;
+    width: 120px;
+    border-bottom: 5px solid colors.$orange;
+}
+
+.dagContainer{
+    width: 100%;
+    vertical-align: bottom;
+    height: 50px;
+    display: flex;
+}
+
+.dagTxt{
+    margin-left: 5%;
+    vertical-align: bottom;
+    vertical-align: bottom;
+    align-self: flex-end;
+}
+
+.infoContainer{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+
+.infoTxt{
+    margin-left: 5%;
+    align-self: flex-end;
+}
+
+.buttonContainer{
+    width: 100%;
+    margin-top: 3%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.schemaBtn{
+    height: 50px;
+    width: 75%;
+    background-color: colors.$purple;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Heading Pro Double';
+    font-weight: 700;
+    color: colors.$white;
+    font-size: 18px;
+}
+
+#schemaIcon{
+    height: 20px;
+}

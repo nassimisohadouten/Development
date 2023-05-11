@@ -1,0 +1,22 @@
+Wat is je leeftijd?
+
+Studeer je, werk je of beide?
+>	Studeer
+>	Werk
+>	Beide
+
+Maak je gebruik van  technologieën tijdens het sporten? Zo ja, welke? 
+
+Welke technologieën zou je tijdens het sporten willen gebruiken?
+>	Draagbare fitness technologieën(smart watches, armband, 	smartphone etc)
+>	Smart fitness apparaten(apparaten die je gegevens 	bijhouden)
+>	Fitness gamificatie(AR, VR etc)
+>	Fitness apps
+
+Bezit je een van de dingen hieronder?(Meerder keuzes zijn mogelijk)
+>	Smartwatch
+>	VR bril
+>	Smart fitness apparaat
+>	Geen van de dingen hierboven
+
+https://docs.google.com/forms/d/1MJV1BdlUOmfqGDM16ScKq7NxmEHU47lcE-_5rttAtaE/viewform?edit_requested=true#responses

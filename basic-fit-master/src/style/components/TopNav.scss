@@ -1,0 +1,33 @@
+@use '../helpers/colors' as colors;
+
+.TopNav {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5% 8%;
+    position: sticky;
+    top: 0;
+    background: colors.$white;
+
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        align-items: flex-end;
+
+       ul{
+           li:first-child{
+               margin-left: 57vw;
+           }
+           li:last-child{
+            margin-left: 3vw;
+           }
+       }
+
+        .icon {
+            margin-top: 0px;
+
+        }
+    }
+}
